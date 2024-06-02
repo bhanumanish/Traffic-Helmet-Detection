@@ -1,0 +1,14 @@
+1. Create an empty folder on the desktop named `ObjectDetection`.
+2. Open the command prompt and change the directory to the new folder with the command `cd ObjectDetection`.
+3. Clone the YOLOv5 repository using the command: `git clone https://github.com/ultralytics/yolov5.git`. This will create a folder named `yolov5` inside the `ObjectDetection` folder.
+4. The `yolov5` folder contains a crucial Python file named `detect.py`, which is responsible for object detection.
+5. After cloning the repository, navigate into the `yolov5` folder with the command `cd yolov5`.
+6. Install all the necessary dependencies using: `pip install -r requirements.txt`.
+7. Download `best.pt` from Colab and manually place it inside the `yolov5` folder.
+8. Also, copy the image you want to test into the `yolov5` folder.
+9. Before running the inference, ensure that `image.png`, `best.pt`, and `detect.py` are all inside the `yolov5` folder.
+10. To run the inference, use the following command inside the `yolov5` folder:
+    ```sh
+    python detect.py --weights best.pt --source image.png
+    ```
+11. After the process completes, you can check the results in the path `ObjectDetection/yolov5/runs/detect/exp`.
